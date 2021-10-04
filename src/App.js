@@ -8,11 +8,11 @@ import Col from 'react-bootstrap/Col';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; 
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import CreateCar from './components/create-car.component'
-import EditCar from './components/edit-car.component';
-import CarList from './components/car-list.component';
+import EditCar from './components/edit-car.component'
+import CarList from './components/car-list.component'
 
 function App() {
   return (
@@ -20,9 +20,10 @@ function App() {
       <div className="App">
         <NavBar bg="dark" variant="dark">
           <Container>
+
             <NavBar.Brand>
               <Link to={"/create-car"} className="nav-link">
-              Car Managament
+                Car Managament
               </Link>
             </NavBar.Brand>
 
@@ -46,10 +47,10 @@ function App() {
             <Col md="12">
               <div className="wrapper">
                 <Switch>
-                  <Route exact path="/" conponent={CreateCar} />
-                  <Route path="/create-car" conponent={CreateCar} />
-                  <Route path="/edit-car/:id" conponent={EditCar} />
-                  <Route path="/car-list" conponent={CarList} />
+                  <Route exact path="/" component={CreateCar} />
+                  <Route path="/create-car" component={CreateCar} />
+                  <Route path="/edit-car/:id" component={EditCar} />
+                  <Route path="/car-list" component={CarList} />
                 </Switch>
               </div>
             </Col>
@@ -57,6 +58,7 @@ function App() {
         </Container>
       </div>
     </Router>
+
   );
 }
 
