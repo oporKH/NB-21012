@@ -8,9 +8,9 @@ import Col from 'react-bootstrap/Col';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; 
 
-import CreateCar from './components/create-car.component';
+import CreateCar from './components/create-car.component'
 import EditCar from './components/edit-car.component';
 import CarList from './components/car-list.component';
 
