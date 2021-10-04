@@ -15,40 +15,40 @@ export default class CreateCar extends Component {
             license: '',
             make: '',
             model: '',
-            note: '',
+            note: ''
         }
     }
 
     onChangeCarLicense = (e) => {
-        this.setState({ license: e.target.value })
+        this.setState({ name: e.target.value })
     }
 
     onChangeCarMake = (e) => {
-        this.setState({ Make: e.target.value })
+        this.setState({ make: e.target.value })
     }
 
     onChangeCarModel = (e) => {
-        this.setState({ Model: e.target.value })
+        this.setState({ model: e.target.value })
     }
 
     onChangeCarNote = (e) => {
-        this.setState({ Note: e.target.value })
+        this.setState({ note: e.target.value })
     }
 
     onSubmit = (e) => {
         e.preventDefault();
 
         console.log('Car successfully created!');
-        console.log('License Plate: ${this.state.license}');
-        console.log('Make: ${this.state.make}');
-        console.log('Model: ${this.state.model}');
-        console.log('Note: ${this.state.note}');
+        console.log(`License Plate: ${this.state.license}`);
+        console.log(`Make: ${this.state.make}`);
+        console.log(`Model: ${this.state.model}`);
+        console.log(`Note: ${this.state.note}`);
 
         this.setState({
             license: '',
             make: '',
             model: '',
-            note: '',
+            note: ''
         })
     }
 
@@ -63,7 +63,7 @@ export default class CreateCar extends Component {
                                 License Plate
                             </Form.Label>
                             <Col>
-                                <Form.Control type="text" placeholder="License Plate..." value={this.state.license}
+                                <Form.Control type="text" placeholder="License Plate..." value={this.state.license} 
                                     onChange={this.onChangeCarLicense} />
                             </Col>
                         </Row>
@@ -75,7 +75,7 @@ export default class CreateCar extends Component {
                                 Make
                             </Form.Label>
                             <Col>
-                                <Form.Control type="text" placeholder="Make..." value={this.state.make}
+                                <Form.Control type="text" placeholder="Make..." value={this.state.make} 
                                     onChange={this.onChangeCarMake} />
                             </Col>
                         </Row>
@@ -87,7 +87,7 @@ export default class CreateCar extends Component {
                                 Model
                             </Form.Label>
                             <Col>
-                                <Form.Control type="text" placeholder="Model..." value={this.state.model}
+                                <Form.Control type="text" placeholder="Model..." value={this.state.model} 
                                     onChange={this.onChangeCarModel} />
                             </Col>
                         </Row>
@@ -99,7 +99,7 @@ export default class CreateCar extends Component {
                                 Note
                             </Form.Label>
                             <Col>
-                                <Form.Control as="textarea" type="text" placeholder="Note..." value={this.state.note}
+                                <Form.Control as="textarea" type="text" placeholder="Note..." value={this.state.note} 
                                     onChange={this.onChangeCarNote} />
                             </Col>
                         </Row>
@@ -110,6 +110,7 @@ export default class CreateCar extends Component {
                         Create Car
                     </Button>
                 </Form>
+
             </div>
         )
     }
