@@ -22,7 +22,7 @@ function App() {
           <Container>
             <NavBar.Brand>
               <Link to={"/create-car"} className="nav-link">
-                React MERN Stack CRUD
+              Car Managament
               </Link>
             </NavBar.Brand>
 
