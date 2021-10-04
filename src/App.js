@@ -29,12 +29,12 @@ function App() {
 
             <Nav className="justify-content-end">
               <Nav>
-                <Link to={"/create-car"} class="nav-link">
+                <Link to={"/create-car"} className="nav-link">
                   Create Car
                 </Link>
               </Nav>
               <Nav>
-                <Link to={"/car-list"} class="nav-link">
+                <Link to={"/car-list"} className="nav-link">
                   Car List
                 </Link>
               </Nav>
